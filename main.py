@@ -7,12 +7,9 @@ Created on Wed Jul  1 00:30:18 2024
 import numpy as np
 import pandas as pd
 
-i=0
-j=0
 
-links_df = pd.read_csv("D:\\Python_movie recommendation\\data_sets\\links.csv")
 movies_df = pd.read_csv("D:\\Python_movie recommendation\\data_sets\\movies.csv")
-tags_df = pd.read_csv("D:\\Python_movie recommendation\\data_sets\\tags.csv")
+
 ratings_df = pd.read_csv("D:\\Python_movie recommendation\\data_sets\\ratings.csv")
 
 df = movies_df.merge(ratings_df, on='movieId')
@@ -45,6 +42,19 @@ for movie in recommended_movies:
     print(movie)
 
 print("----------------------------------------------------------------------------------")
+
+"""
+# movies names you can try or use the movies name that are in movies.csv file
+
+Forrest Gump (1994)
+Heavy Metal (1981)
+Hellraiser: Bloodline (1996)
+Indiana Jones and the Temple of Doom (1984)
+Interview with the Vampire: The Vampire Chronicles (1994)
+Jerky Boys, The (1995)
+Major Payne (1995)
+Maverick (1994)
+"""
     
     
 
